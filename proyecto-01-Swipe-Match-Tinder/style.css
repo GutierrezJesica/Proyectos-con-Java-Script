@@ -68,18 +68,30 @@ footer {
         cursor: pointer;
         transition: scale .3s ease;
 
-        & :hover {
+        &:hover {
             scale: 1.4;
         }
 
-        & is-big {
+        &.is-big {
             background-size: 250px;
             width: 48px;
             height: 48px;
         }
 
-        & is-undo {
-            
+        &.is-undo {
+            background-position: -147px 0;
+        }
+
+        &.is-remove {
+            background-position: -151px 0;
+        }
+
+        &.is-star {
+            background-position: -73px 0;
+        }
+
+        &.is-fav {
+            background-position: -48px 0;
         }
     }
 }
