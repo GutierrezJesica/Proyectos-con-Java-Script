@@ -14,8 +14,13 @@ body {
     overflow: hidden;
     user-select: none;
     background: #eee;
+    zoom: 0.6;
 }
 
 main {
     background: url("./img/iphone.webp") no-repeat;
+    background-size: contain;
+    width: 320px;
+    height: 640px;
+    display: flex;
 }
