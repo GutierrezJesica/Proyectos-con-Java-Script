@@ -23,4 +23,5 @@ main {
     width: 320px;
     height: 640px;
     display: flex;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 3));
 }
