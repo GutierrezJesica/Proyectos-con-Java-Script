@@ -37,3 +37,22 @@ section {
     padding: 16px 6px;
     margin: 24px;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+
+    & img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    padding: 0 24px;
+    justify-content: center;
+    align-items: center;
+}
