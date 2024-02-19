@@ -49,10 +49,27 @@ function startDrag (event) {
         const decisionMade = Math.abs(pullDeltaX) >= DECISION_THRESHOLD
 
         if (decisionMade) {
-            console.log('decision hecha')
+            const goRight = pullDeltaX >= 0
+            const goLeft = !goRight
+
+            // add class acording to the decision
+            actualCard.classList.add(goRight ? 'go-right' : 'go-left')
+            actualCard.addEventListener('transitionend', () => {
+                actualCard.remove()
+            })
         } else {
-            console.log('pensando...')
+            actualCard.classList.add('reset')
+            actualCard.classList.remove('go-right', 'go-left')
         }
+
+        // reset the variables
+        actualCard.addEventListener('transitionend', () => {
+            actualCard.removeAttribute('style')
+            actualCard.classList.remove('reset')
+
+            pullDeltaX = 0
+            isAnimating = false
+        })
     }
 }
 
