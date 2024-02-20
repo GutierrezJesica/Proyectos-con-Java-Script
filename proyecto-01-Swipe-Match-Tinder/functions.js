@@ -8,6 +8,7 @@ function startDrag (event) {
 
     // get the first article element
     const actualCard = event.target.closest('article')
+    if (!actualCard) return
 
     // get initial position of mouse or finger
     const startX = event.pageX ?? event.touches[0].pageX
@@ -75,6 +76,8 @@ function startDrag (event) {
         } else {
             actualCard.classList.add('reset')
             actualCard.classList.remove('go-right', 'go-left')
+            actualCard.querySelectorAll('.choice').forEach(el => {el.style.
+            opacity = 0})
         }
 
         // reset the variables
