@@ -102,6 +102,16 @@ footer {
     height: 100%;
     margin: 0 auto;
 
+    & > span {
+        display: grid;
+        place-content: center;
+        color: #3d3d3d;
+        font-size: 14px;
+        text-align: center;
+        height: 100%;
+        z-index: -1;
+    }
+
     & article {
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
