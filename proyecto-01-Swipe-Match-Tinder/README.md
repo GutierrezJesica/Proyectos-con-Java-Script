@@ -6,11 +6,13 @@
 <h2>Imagen de muestra del proyecto</h2>
 <img src="/proyecto-01-Swipe-Match-Tinder/img/Tinder.jpg">
 
-<h2>Utilización de article para las card</h2>
+<h2>Utilización de article en el HTML para las card</h2>
 
+```ruby
 <article>
     <img src="./img/2.webp" alt="Alex, 25 years old"/>
     <h2>Alex <span>25</span></h2>
     <div class="choice nope">NOPE</div>
     <div class="choice like">LIKE</div>
 </article>
+```
