@@ -6,7 +6,7 @@
 <h2>Imagen de muestra del proyecto</h2>
 <img src="/proyecto-01-Swipe-Match-Tinder/img/Tinder.jpg">
 
-<h1>Conocimientos nuevos aplicados</h1>
+<h1>Nuevos conocimientos aplicados</h1>
 
 <h2>Utilización de article en el HTML para las card</h2>
 
@@ -39,6 +39,7 @@ header {
 
 ```
 // saber si el usuario tomo una decision
+
         const decisionMade = Math.abs(pullDeltaX) >= DECISION_THRESHOLD
 
         if (decisionMade) {
@@ -55,3 +56,8 @@ header {
             actualCard.querySelectorAll('.choice').forEach(el => {el.style.
             opacity = 0})
         }
+```
+<h3>Conclusión:</h3>
+
+<p>Fue un excelente proyecto para poner en práctica todo lo aprendido anteriormente.<br>
+Saludos!</p>
