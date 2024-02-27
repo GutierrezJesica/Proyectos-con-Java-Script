@@ -31,3 +31,27 @@ header {
         height: 24px;
     }
 }
+```
+
+
+<h2>Utilización de 'Match y classList' en JAVASCRIPT</h2>
+
+
+```
+// saber si el usuario tomo una decision
+        const decisionMade = Math.abs(pullDeltaX) >= DECISION_THRESHOLD
+
+        if (decisionMade) {
+            const goRight = pullDeltaX >= 0
+            
+            // add class acording to the decision
+            actualCard.classList.add(goRight ? 'go-right' : 'go-left')
+            actualCard.addEventListener('transitionend', () => {
+                actualCard.remove()
+            })
+        } else {
+            actualCard.classList.add('reset')
+            actualCard.classList.remove('go-right', 'go-left')
+            actualCard.querySelectorAll('.choice').forEach(el => {el.style.
+            opacity = 0})
+        }
