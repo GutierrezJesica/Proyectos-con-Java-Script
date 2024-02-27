@@ -6,6 +6,8 @@
 <h2>Imagen de muestra del proyecto</h2>
 <img src="/proyecto-01-Swipe-Match-Tinder/img/Tinder.jpg">
 
+<h1>Conocimientos nuevos aplicados</h1>
+
 <h2>Utilización de article en el HTML para las card</h2>
 
 ```ruby
@@ -16,3 +18,16 @@
     <div class="choice like">LIKE</div>
 </article>
 ```
+
+<h2>Utilización de '&' en el CSS</h2>
+
+```
+header {
+    display: flex;
+    justify-content: center;
+
+    & img {
+        width: 24px;
+        height: 24px;
+    }
+}
